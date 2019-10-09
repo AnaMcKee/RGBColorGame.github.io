@@ -1,0 +1,89 @@
+body{
+	background-color: #232323;
+	margin: 0;
+	font-family: "Montserrat", "Avenir";
+}
+.square{
+	width: 30%;
+	background: purple;
+	/*to add content/space to the squares:*/
+	padding-bottom: 30%;
+	float: left;
+	margin: 1.66%;
+	border-radius: 15%;
+	transition: background 0.6s;
+	/*to make it browser friendly, we add:*/
+	/*safari*/
+	--webkit-transition: background 0.6s;
+	/*firefox*/
+	--moz-transition: background 0.6s;
+}
+
+#container{
+	/*trick to center things in containers:
+	zero top and bottom and auto left and right 
+	will center the grid*/
+	/*later I added 20 for space on top*/
+	margin: 20px auto;
+	/*to make the squares smaller*/
+	max-width: 600px;
+
+}
+
+h1{
+	text-align: center;
+	/*space in between lines*/
+	line-height: 1.1;
+	padding: 20px 0;
+	font-weight: normal;
+	color: white;
+	background: steelblue;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+#stripe{
+	background-color: white;
+	height: 30px;
+	text-align: center;
+}
+.selected{
+	color: white;
+	background: steelblue;
+}
+#colorDisplay{
+	font-size: 200%;
+}
+button{
+	border:none;
+	background: none;
+	text-transform: uppercase;
+	/*it will take 100% of the container div*/
+	height: 100%; 
+	font-weight: 700;
+	color: steelblue;
+	letter-spacing: 1px;
+	font-size: inherit;
+	/*takes 2 arguments:
+	to what and time, in this case
+	to all and in 2 sec*/
+	transition: all 0.3s;
+	/*safari*/
+	--webkit-transition: all 0.3s;
+	/*firefox*/
+	--moz-transition: all 0.3s;
+	outline: none;
+}
+
+button:hover {
+	/*oposite of what they are*/
+	color: white;
+	background: steelblue;
+}
+#message{
+	/*to create a space between new colors
+	and buttons easy and hard*/
+	display: inline-block;
+	/*it takes 20% of the screen just the span*/
+	width:20%;
+}
